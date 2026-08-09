@@ -1,1 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO 메타 태그 -->
+    <title>파워맨 | 공식 홈페이지</title>
+    <meta name="description" content="파워맨 공식 홈페이지. 남성의 자신감을 위한 확실한 선택! 비아그라와 시알리스의 상세한 정보, 작용 기전, 1+1 특별 패키지 가격 및 리얼 후기를 확인하세요.">
+    <meta name="keywords" content="파워맨, 비아그라, 시알리스, 후기, 발기부전, 실데나필, 타다라필, 정품, 가격, 구매">
+    <link rel="canonical" href="https://powermanyak.com/">
+    
+    <!-- 오픈 그래프 (SNS 공유 시 표시됨) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="파워맨 | 공식 홈페이지">
+    <meta property="og:description" content="안전하고 확실한 파워맨! 비아그라 & 시알리스 정보와 1+1 특별 패키지를 만나보세요.">
+    <meta property="og:url" content="https://powermanyak.com/">
 
+    <!-- Tailwind CSS 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* 부드러운 스크롤 적용 */
+        html { scroll-behavior: smooth; }
+        
+        /* 제품 이미지 플레이스홀더 스타일 */
+        .product-img {
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pt-20">
+
+    <!-- 네비게이션 바 -->
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-gray-200 bg-white/90 backdrop-blur-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <!-- 로고 -->
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-black text-indigo-900 tracking-tighter">파워맨</span>
+            </a>
+            <!-- 데스크톱 메뉴 & 구매버튼 -->
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="#cta" class="hidden md:inline-flex text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-bold rounded-full text-sm px-6 py-2.5 text-center transition-colors shadow-lg shadow-red-500/30">
+                    구매하기
+                </a>
+                <!-- 모바일 햄버거 버튼 -->
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false" onclick="toggleMenu()">
+                    <span class="sr-only">메뉴 열기</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- 메뉴 링크 -->
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+                    <li><a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-700 md:p-0">파워맨 소개</a></li>
+                    <li><a href="#viagra" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-700 md:p-0">비아그라</a></li>
+                    <li><a href="#cialis" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-700 md:p-0">시알리스</a></li>
+                    <li><a href="#reviews" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-700 md:p-0">고객 후기</a></li>
+                    <li><a href="#qna" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-indigo-700 md:p-0">Q&A</a></li>
+                    <!-- 모바일용 메뉴 내 구매버튼 -->
+                    <li class="md:hidden mt-4">
+                        <a href="#cta" class="block text-center text-white bg-red-600 hover:bg-red-700 font-bold rounded-lg text-base px-4 py-3">
+                            구매 안내로 이동
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 (메인 배너) 섹션 -->
+    <header class="bg-indigo-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://via.placeholder.com/1920x600/1e1b4b/ffffff?text=+')] opacity-20 bg-cover bg-center"></div>
+        <div class="relative max-w-screen-xl mx-auto px-4 py-24 lg:py-32 flex flex-col items-center text-center">
+            <span class="bg-indigo-800 text-indigo-200 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-indigo-700">남성의 잃어버린 자신감을 되찾아 드립니다</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight tracking-tight">
+                파워맨 | 공식 홈페이지
+            </h1>
+            <p class="text-lg md:text-xl text-indigo-200 mb-10 max-w-2xl font-light">
+                검증된 효능, 철저한 프라이버시 보호, 그리고 파격적인 1+1 혜택까지.<br class="hidden md:block">
+                수많은 후기가 증명하는 파워맨에서 비아그라와 시알리스의 상세 정보를 확인하세요.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="#cta" class="px-8 py-4 text-lg font-bold text-white bg-red-600 rounded-full hover:bg-red-700 hover:-translate-y-1 transition-all shadow-lg shadow-red-500/40 text-center">
+                    👉 제품 구매하러 가기
+                </a>
+                <a href="#about" class="px-8 py-4 text-lg font-bold text-white bg-white/10 border border-white/20 rounded-full hover:bg-white/20 hover:-translate-y-1 transition-all text-center backdrop-blur-sm">
+                    상세 정보 보기 ↓
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 파워맨 소개 섹션 (신규) -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">왜 <span class="text-indigo-700">파워맨</span>을 선택해야 할까요?</h2>
+                    <div class="w-24 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm text-center">
+                        <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">1</div>
+                        <h3 class="text-xl font-bold mb-3">검증된 확실한 품질</h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                            파워맨은 오직 엄격한 기준을 통과한 확실한 제품만을 취급합니다. 수많은 재구매 고객님들의 데이터가 증명하는 부작용 최소화 및 확실한 약효를 경험해 보세요. 저희는 결코 품질과 타협하지 않습니다.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm text-center">
+                        <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">2</div>
+                        <h3 class="text-xl font-bold mb-3">파격적인 1+1 혜택</h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                            불필요한 유통 마진을 걷어내고 고객님들께 직접 혜택을 돌려드립니다. 비아그라와 시알리스 모두 본품 구매 시 동일한 용량의 제품을 100% 하나 더 얹어드리는 파격적인 구성을 상시 진행 중입니다.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm text-center">
+                        <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">3</div>
+                        <h3 class="text-xl font-bold mb-3">완벽한 비밀 보장 배송</h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                            고객님의 프라이버시를 최우선으로 생각합니다. 3중 밀봉 포장과 송장 내 민감한 정보(상품명 등)를 완벽히 가린 '사무용품' 등의 안심 라벨링으로 가족이나 직장 동료가 수령해도 전혀 알 수 없도록 배송됩니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 비아그라 소개 & 가격 통합 섹션 -->
+        <section id="viagra" class="py-20 bg-slate-50 border-t border-slate-200">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="flex flex-col lg:flex-row gap-12 items-start">
+                    <!-- 상세 정보 -->
+                    <div class="w-full lg:w-3/5">
+                        <div class="inline-block bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-full text-sm mb-4">폭발적인 효과, 단기 결전용</div>
+                        <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-6">1. 비아그라 (Viagra) <span class="text-2xl text-slate-500 font-medium">/ 실데나필</span></h2>
+                        
+                        <img src="https://via.placeholder.com/800x400/2563eb/ffffff?text=Viagra+Image" alt="파워맨 비아그라 실데나필 상세 이미지" class="w-full h-auto rounded-xl shadow-md mb-8">
+                        
+                        <p class="text-lg text-slate-700 mb-6 leading-relaxed">
+                            비아그라의 주성분은 <strong>실데나필(Sildenafil)</strong>로, 전 세계적으로 가장 널리 알려지고 그 안정성이 검증된 발기부전 치료제의 대명사입니다. 필요할 때 빠르고 강력하게 음경 해면체 내의 혈류량을 증가시켜 자연스러우면서도 단단한 발기를 유도합니다.
+                        </p>
+                        
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm mb-8">
+                            <h4 class="text-lg font-bold text-indigo-900 mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                                비아그라 상세 스펙 요약
+                            </h4>
+                            <ul class="space-y-3 text-slate-600">
+                                <li class="flex items-start"><span class="font-bold text-slate-800 w-24 shrink-0">작용 기전:</span> <span>PDE5(포스포디에스테라제 5형) 효소의 활성을 억제하여 평활근을 이완시키고 혈류 유입을 극대화합니다.</span></li>
+                                <li class="flex items-start"><span class="font-bold text-slate-800 w-24 shrink-0">발현 시간:</span> <span>복용 후 보통 <strong>30분에서 60분 이내</strong>에 효과가 나타납니다. 관계 1시간 전 복용이 이상적입니다.</span></li>
+                                <li class="flex items-start"><span class="font-bold text-slate-800 w-24 shrink-0">지속 시간:</span> <span>일반적으로 <strong>4시간 ~ 최대 8시간</strong> 지속됩니다. 굵고 짧게 확실한 퍼포먼스가 필요할 때 추천합니다.</span></li>
+                                <li class="flex items-start"><span class="font-bold text-slate-800 w-24 shrink-0">주의 사항:</span> <span>기름진 음식이나 과도한 음주 후 복용 시 체내 흡수율이 떨어질 수 있습니다. <strong>공복 복용</strong>을 권장합니다.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 비아그라 가격표 -->
+                    <div class="w-full lg:w-2/5 mt-8 lg:mt-0 lg:sticky lg:top-24">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                            <div class="bg-blue-600 p-6 text-center">
+                                <h3 class="text-2xl font-black text-white">비아그라 특별 구성</h3>
+                                <p class="text-blue-100 mt-2">파워맨 한정 1+1 더블 이벤트</p>
+                            </div>
+                            
+                            <div class="p-6 space-y-6">
+                                <!-- 비아그라 판포장 -->
+                                <div class="p-5 border-2 border-blue-100 rounded-xl hover:border-blue-500 transition-colors bg-blue-50/30">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-lg font-bold text-slate-900">비아그라 (판포장)</h4>
+                                        <span class="bg-red-100 text-red-600 text-xs font-black px-2 py-1 rounded">인기</span>
+                                    </div>
+                                    <p class="text-blue-600 font-bold mb-4">16정 + 16정 <span class="text-sm text-slate-500 font-normal">(추가증정)</span></p>
+                                    <div class="text-3xl font-black text-slate-900 text-right">150,000<span class="text-lg font-normal text-slate-600">원</span></div>
+                                </div>
+                                
+                                <!-- 비아그라 대용량 -->
+                                <div class="p-5 border-2 border-blue-100 rounded-xl hover:border-blue-500 transition-colors">
+                                    <h4 class="text-lg font-bold text-slate-900 mb-2">비아그라 (대용량)</h4>
+                                    <p class="text-blue-600 font-bold mb-4">30정 + 30정 <span class="text-sm text-slate-500 font-normal">(추가증정)</span></p>
+                                    <div class="text-3xl font-black text-slate-900 text-right">160,000<span class="text-lg font-normal text-slate-600">원</span></div>
+                                </div>
+                                
+                                <a href="#cta" class="block w-full py-4 text-center bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-colors text-lg">
+                                    비아그라 구매 안내로 이동
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 시알리스 소개 & 가격 통합 섹션 -->
+        <section id="cialis" class="py-20 bg-white border-t border-slate-200">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="flex flex-col lg:flex-row-reverse gap-12 items-start">
+                    <!-- 상세 정보 -->
+                    <div class="w-full lg:w-3/5">
+                        <div class="inline-block bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full text-sm mb-4">압도적 지속력, 위크엔드 필</div>
+                        <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-6">2. 시알리스 (Cialis) <span class="text-2xl text-slate-500 font-medium">/ 타다라필</span></h2>
+                        
+                        <img src="https://via.placeholder.com/800x400/f59e0b/ffffff?text=Cialis+Image" alt="파워맨 시알리스 타다라필 상세 이미지" class="w-full h-auto rounded-xl shadow-md mb-8">
+                        
+                        <p class="text-lg text-slate-700 mb-6 leading-relaxed">
+                            시알리스의 주성분은 <strong>타다라필(Tadalafil)</strong>입니다. 압도적인 지속 시간으로 인해 금요일에 복용하면 주말 내내 효과가 이어진다 하여 해외에서는 <strong>'위크엔드 필(Weekend Pill)'</strong>이라는 별명으로 더욱 유명합니다. 시간적 강박에서 벗어나 자연스러운 분위기를 연출하고 싶은 분들께 사랑받고 있습니다.
+                        </p>
+                        
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm mb-8">
+                            <h4 class="text-lg font-bold text-amber-600 mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                                시알리스 상세 스펙 요약
+                            </h4>
+                            <ul class="space-y-3 text-slate-600">
+                                <li class="flex items-start"><span class="font-bold text-slate-800 w-24 shrink-0">작용 기전:</span> <span>분자 구조의 차이로 인해 체내 반감기가 매우 길어 성적 자극이 있을 때마다 오랜 시간 동안 혈류 개선 효과를 발휘합니다.</span></li>
+                                <li class="flex items-start"><span class="font-bold text-slate-800 w-24 shrink-0">발현 시간:</span> <span>복용 후 약 <strong>30분에서 120분</strong> 사이에 천천히 부드럽게 효과가 나타납니다. 시간적 여유를 두고 복용하세요.</span></li>
+                                <li class="flex items-start"><span class="font-bold text-slate-800 w-24 shrink-0">지속 시간:</span> <span>한 번 복용으로 <strong>최대 24시간 ~ 36시간</strong>까지 효과가 지속되어 타이밍에 쫓기지 않는 편안함을 제공합니다.</span></li>
+                                <li class="flex items-start"><span class="font-bold text-slate-800 w-24 shrink-0">최대 장점:</span> <span><strong>식사나 음주 여부와 관계없이</strong> 일정한 체내 흡수율을 유지합니다. 데이트 중 식사나 와인 한 잔을 곁들여도 무방합니다.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 시알리스 가격표 -->
+                    <div class="w-full lg:w-2/5 mt-8 lg:mt-0 lg:sticky lg:top-24">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                            <div class="bg-amber-500 p-6 text-center">
+                                <h3 class="text-2xl font-black text-white">시알리스 특별 구성</h3>
+                                <p class="text-amber-100 mt-2">파워맨 한정 1+1 더블 이벤트</p>
+                            </div>
+                            
+                            <div class="p-6 space-y-6">
+                                <!-- 시알리스 판포장 -->
+                                <div class="p-5 border-2 border-amber-100 rounded-xl hover:border-amber-500 transition-colors bg-amber-50/30">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="text-lg font-bold text-slate-900">시알리스 (판포장)</h4>
+                                        <span class="bg-red-100 text-red-600 text-xs font-black px-2 py-1 rounded">베스트</span>
+                                    </div>
+                                    <p class="text-amber-600 font-bold mb-4">16정 + 16정 <span class="text-sm text-slate-500 font-normal">(추가증정)</span></p>
+                                    <div class="text-3xl font-black text-slate-900 text-right">150,000<span class="text-lg font-normal text-slate-600">원</span></div>
+                                </div>
+                                
+                                <!-- 시알리스 대용량 -->
+                                <div class="p-5 border-2 border-amber-100 rounded-xl hover:border-amber-500 transition-colors">
+                                    <h4 class="text-lg font-bold text-slate-900 mb-2">시알리스 (대용량)</h4>
+                                    <p class="text-amber-600 font-bold mb-4">30정 + 30정 <span class="text-sm text-slate-500 font-normal">(추가증정)</span></p>
+                                    <div class="text-3xl font-black text-slate-900 text-right">160,000<span class="text-lg font-normal text-slate-600">원</span></div>
+                                </div>
+                                
+                                <a href="#cta" class="block w-full py-4 text-center bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl transition-colors text-lg">
+                                    시알리스 구매 안내로 이동
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 중간 CTA (구매 유도) -->
+        <section id="cta" class="py-16 bg-slate-900 relative">
+            <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+            <div class="relative max-w-screen-md mx-auto px-4 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">자신감 회복, 더 이상 미루지 마세요!</h2>
+                <a href="https://ssw33.xyz" target="_blank" rel="noopener noreferrer" class="inline-block w-full sm:w-auto bg-red-600 text-white font-black text-xl px-12 py-5 rounded-full hover:bg-red-700 hover:scale-105 transition-transform shadow-[0_0_20px_rgba(220,38,38,0.5)]">
+                    🚀 안전한 1+1 구매사이트로 이동
+                </a>
+                <p class="text-slate-400 mt-4 text-sm">클릭 시 파워맨 전용 보안 구매 페이지(ssw33.xyz)로 새 창에서 연결됩니다.</p>
+            </div>
+        </section>
+
+        <!-- 리얼 후기 섹션 -->
+        <section id="reviews" class="py-20 bg-slate-50">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">파워맨 베스트 고객 후기</h2>
+                    <p class="text-slate-600 text-lg">파워맨을 통해 20대의 활력을 되찾으신 고객님들의 생생하고 솔직한 100% 리얼 후기입니다.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- 후기 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex text-lg">★★★★★</div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">"설명대로 공복 복용이 진리네요"</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            "파워맨 사이트에서 비아그라 상세 정보를 읽어보고 저에게 맞는 것 같아 대용량으로 구매했습니다. 설명에 적힌 대로 식사 전 공복에 복용하니 40분쯤 뒤부터 확실하게, 아주 강하게 반응이 오네요. 오랜만에 아내와 신혼 때처럼 정말 좋은 시간 보냈습니다. 배송도 박스에 사무용품으로 와서 아무도 모르게 잘 받았습니다."
+                        </p>
+                        <div class="text-sm font-bold text-slate-800 border-t pt-4">김** 고객님 <span class="text-slate-400 font-normal">| 40대 / 직장인 / 비아그라 구매</span></div>
+                    </div>
+                    
+                    <!-- 후기 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex text-lg">★★★★★</div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">"술자리 후에도 끄떡없는 시알리스"</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            "영업직이라 회식 자리가 잦아 음식물이나 술 섭취에 구애받지 않는다는 시알리스로 정착했습니다. 금요일 저녁에 복용하면 일요일 아침까지 든든합니다. 파워맨에서 제공하는 복용법 가이드가 큰 도움이 되었습니다. 지속력이 진짜 타의 추종을 불허하네요. 1+1이라 가성비도 최고입니다."
+                        </p>
+                        <div class="text-sm font-bold text-slate-800 border-t pt-4">이** 고객님 <span class="text-slate-400 font-normal">| 50대 / 사업가 / 시알리스 구매</span></div>
+                    </div>
+                    
+                    <!-- 후기 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex text-lg">★★★★★</div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">"비교 설명이 선택에 큰 도움"</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            "최근 극심한 스트레스로 인해 예전 같지 않아 심리적으로 위축되다 파워맨을 찾게 되었습니다. 비아그라와 시알리스의 성분 차이와 작용 기전을 너무 상세하게 비교해 주셔서 제 라이프스타일에 맞게 선택하기 편했습니다. 배송 빠르고 퀄리티 확실합니다. 단골 예약입니다."
+                        </p>
+                        <div class="text-sm font-bold text-slate-800 border-t pt-4">박** 고객님 <span class="text-slate-400 font-normal">| 30대 / 자영업 / 시알리스 구매</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 자주 묻는 질문 (Q&A) -->
+        <section id="qna" class="py-20 bg-white">
+            <div class="max-w-screen-md mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-black text-slate-900 mb-4">자주 묻는 질문 (Q&A)</h2>
+                    <p class="text-slate-600">고객님들께서 가장 많이 여쭤보시는 질문들을 모았습니다.</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                        <h3 class="text-lg font-bold text-indigo-700 mb-3 flex items-start">
+                            <span class="mr-2 text-xl">Q.</span> 비아그라와 시알리스 중 어떤 것을 선택해야 할까요?
+                        </h3>
+                        <p class="text-slate-700 leading-relaxed pl-8">
+                            A. 사용 목적과 라이프스타일에 따라 선택하시는 것이 좋습니다. 짧은 시간(4~8시간) 동안 폭발적이고 확실한 강직도를 원하신다면 <strong>비아그라</strong>를 추천합니다. 반면, 시간적 제약 없이 주말 내내(최대 36시간) 효과를 원하시거나 식사/음주 여부와 상관없이 편하게 복용하고 싶으시다면 <strong>시알리스</strong>를 추천해 드립니다.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                        <h3 class="text-lg font-bold text-indigo-700 mb-3 flex items-start">
+                            <span class="mr-2 text-xl">Q.</span> 약을 먹었는데 효과가 나타나지 않을 수도 있나요?
+                        </h3>
+                        <p class="text-slate-700 leading-relaxed pl-8">
+                            A. 두 제품 모두 단순히 복용한다고 발기가 되는 것이 아니라, <strong>성적인 자극(시각적, 촉각적 등)</strong>이 있어야만 효과가 발현됩니다. 자극이 없는 일상생활 중에는 발기가 일어나지 않으니 안심하셔도 됩니다. 또한 처음 복용하시는 경우 심리적 긴장감 등으로 효과가 미미할 수 있으나 2~3회 시도 시 정상적인 효과를 보실 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                        <h3 class="text-lg font-bold text-indigo-700 mb-3 flex items-start">
+                            <span class="mr-2 text-xl">Q.</span> 배송 시 비밀 보장이 확실하게 되나요?
+                        </h3>
+                        <p class="text-slate-700 leading-relaxed pl-8">
+                            A. 네, 파워맨의 배송 시스템은 100% 비밀 보장을 원칙으로 합니다. 내용물이 전혀 보이지 않는 3중 안심 포장으로 발송되며, 택배 송장에는 '사무용품' 혹은 '비타민' 등으로 표기되어 본인이 아닌 타인(가족, 경비실 등)이 수령하더라도 절대 내용물을 유추할 수 없습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <div class="text-2xl font-black text-white tracking-tighter mb-2">파워맨</div>
+                <p class="text-sm text-slate-400">본 사이트는 비아그라 및 시알리스 관련 정확한 정보 제공 및 구매 안내를 위한 공식 플랫폼입니다.</p>
+                <p class="text-sm mt-1">공식 도메인 : <a href="https://powermanyak.com" class="text-indigo-400 hover:text-indigo-300 transition-colors">powermanyak.com</a></p>
+            </div>
+            <div class="text-center md:text-right text-sm text-slate-500">
+                <p>고객센터 및 기타 문의는 안내된 구매사이트를 통해 진행해주시기 바랍니다.</p>
+                <p class="mt-2">&copy; 2026 파워맨 공식 홈페이지. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 모바일 메뉴 토글 자바스크립트 -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navbar-sticky');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

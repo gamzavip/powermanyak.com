@@ -24,21 +24,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
-        /* 인스타그램 폰트 느낌 설정 (시스템 폰트 우선) */
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #fafafa; /* 인스타 특유의 옅은 회색 배경 */
+            background-color: #fafafa;
             color: #262626;
         }
         
-        /* 인스타 그라디언트 테두리 (스토리 링) */
         .story-ring {
             background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
             padding: 2px;
             border-radius: 50%;
         }
         
-        /* 피드 이미지 호버 효과 */
         .feed-img-container img { transition: transform 0.3s ease; }
         .feed-img-container:hover img { transform: scale(1.02); }
     </style>
@@ -87,26 +84,28 @@
 </head>
 <body class="antialiased pt-16">
 
-    <!-- 네비게이션 바 -->
     <nav class="fixed w-full z-50 top-0 start-0 bg-white border-b border-gray-300">
-        <div class="max-w-screen-md flex flex-wrap items-center justify-between mx-auto px-4 h-16">
+        <div class="max-w-[1024px] flex flex-wrap items-center justify-between mx-auto px-4 h-16">
             <a href="/" class="flex items-center">
                 <span class="self-center text-2xl font-black text-indigo-900 tracking-tighter">파워맨</span>
             </a>
             
-            <div class="hidden md:block">
-                <ul class="flex space-x-6 text-sm font-semibold text-gray-800">
-                    <li><a href="/" class="hover:text-gray-500 transition-colors">홈</a></li>
-                    <li><a href="/#viagra" class="hover:text-gray-500 transition-colors">비아그라</a></li>
-                    <li><a href="/#cialis" class="hover:text-gray-500 transition-colors">시알리스</a></li>
-                    <li><a href="/blog" class="text-black font-bold border-b-2 border-black pb-1">건강 칼럼</a></li>
-                </ul>
-            </div>
+            <!-- 모바일 햄버거 버튼 -->
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" onclick="toggleMenu()">
+                <span class="sr-only">메뉴 열기</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
 
-            <div class="flex md:order-2">
-                <a href="https://ssw33.xyz" target="_blank" rel="noopener noreferrer" class="text-white bg-blue-500 hover:bg-blue-600 font-bold rounded-lg text-sm px-4 py-1.5 text-center transition-colors">
-                    구매하기
-                </a>
+            <!-- 네비게이션 메뉴 (데스크톱 및 모바일 접이식) -->
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-semibold text-gray-800 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+                    <li><a href="/" class="block py-2 px-3 text-gray-900 rounded hover:text-gray-500 md:p-0 transition-colors">홈</a></li>
+                    <li><a href="/#viagra" class="block py-2 px-3 text-gray-900 rounded hover:text-gray-500 md:p-0 transition-colors">비아그라</a></li>
+                    <li><a href="/#cialis" class="block py-2 px-3 text-gray-900 rounded hover:text-gray-500 md:p-0 transition-colors">시알리스</a></li>
+                    <li><a href="/blog" class="block py-2 px-3 text-black font-bold md:border-b-2 md:border-black md:pb-1 md:p-0">건강 칼럼</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -154,7 +153,6 @@
                     </button>
                 </div>
                 
-                <!-- 수정사항 반영: a 태그의 aspect-square 삭제, img 태그의 h-full 삭제 -->
                 <a href="/blog/viagra-guide" class="block overflow-hidden feed-img-container bg-gray-100">
                     <img src="/img/Gemini_Generated_Image_5ypd775ypd775ypd.webp" alt="비아그라 올바른 복용법 가이드" class="w-full object-cover">
                 </a>
@@ -182,7 +180,6 @@
                     </button>
                 </div>
                 
-                <!-- 수정사항 반영: a 태그의 aspect-square 삭제, img 태그의 h-full 삭제 -->
                 <a href="/blog/cialis-weekend-pill" class="block overflow-hidden feed-img-container bg-gray-100">
                     <img src="/img/Gemini_Generated_Image_zdbw6zzdbw6zzdbw.webp" alt="시알리스 위크엔드 필" class="w-full object-cover">
                 </a>
@@ -210,7 +207,6 @@
                     </button>
                 </div>
                 
-                <!-- 수정사항 반영: a 태그의 aspect-square 삭제, img 태그의 h-full 삭제 -->
                 <a href="/blog/mens-health-confidence" class="block overflow-hidden feed-img-container bg-gray-100">
                     <img src="/img/Gemini_Generated_Image_wmcup4wmcup4wmcu.webp" alt="중년 남성 건강 가이드" class="w-full object-cover">
                 </a>
@@ -227,7 +223,6 @@
         </div>
     </main>
 
-    <!-- 푸터 영역 -->
     <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 mt-12">
         <div class="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
@@ -248,5 +243,15 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navbar-sticky');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+    </script>
 </body>
 </html>
